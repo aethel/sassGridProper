@@ -1,0 +1,60 @@
+@import "fgrid";
+
+// sample layout
+
+* {
+  box-sizing: border-box;
+}
+
+.main-nav__list{
+  @include container(row);
+}
+
+.main-nav__link{
+  @include item(1,1);
+}
+
+.content {
+  @include container(row, wrap, flex-end,flex-start,space-around);
+}
+
+.content--primary {
+  @include item(5,0,0,1);
+  background: pink;
+  padding:0 10px;
+}
+
+.content--secondary {
+  @include item(1,1,5%,2);
+  background: goldenrod;
+  padding:0 10px;
+}
+
+.content--tertiary {
+  @include item(2,0,0,3);
+  background: rebeccapurple;
+  padding:0 10px;
+}
+
+footer {
+  @include container(row, space-between, stretch);
+}
+
+.footer-container {
+  @include item(1,1,0);
+}
+
+section{
+  background: green;
+}
+
+div:nth-child(1) {
+  background: limegreen;
+}
+div:nth-child(2) {
+  background: yellow;
+}
+
+div:nth-child(3) {
+  background: blue;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "sass-grid",
+  "version": "0.0.1",
+  "description": "mixin grid with flexbox",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^3.3.3",
+    "nodemon": "^1.7.2"
+  },
+  "scripts":{
+    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  }
+}
